@@ -9,6 +9,8 @@ import org.springframework.context.annotation.PropertySource;
 import rmv.oop.lab1.main.model.Necklace;
 import rmv.oop.lab1.main.service.NecklaceCreationService;
 
+import java.math.BigDecimal;
+
 @SpringBootApplication
 @PropertySource("classpath:gems.properties")
 public class Main implements CommandLineRunner {
@@ -26,5 +28,6 @@ public class Main implements CommandLineRunner {
     public void run(String... args){
         Necklace necklace = necklaceCreationService.createNecklace(necklaceGemsCount);
         necklace.print();
+        necklace.printWithClarity(new BigDecimal("5.0"),new BigDecimal("65.0"));
     }
 }

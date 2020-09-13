@@ -10,15 +10,15 @@ import java.math.BigDecimal;
 public class Sapphire extends Gem {
     private SapphireColor color;
 
-    public Sapphire(SapphireColor color, BigDecimal clarity, BigDecimal weight){
-        super(clarity,weight);
+    public Sapphire(SapphireColor color, BigDecimal clarity, BigDecimal weight) {
+        super(clarity, weight);
         this.color = color;
     }
 
     @Override
     public String toString() {
         return "Sapphire{" +
-                "weight="+ super.getWeight() +
+                "weight=" + super.getWeight() +
                 " clarity=" + super.getClarity() +
                 " price=" + super.getPrice() +
                 " color=" + color +

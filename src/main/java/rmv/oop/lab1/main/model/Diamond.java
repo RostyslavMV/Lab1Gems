@@ -9,17 +9,18 @@ import java.math.BigDecimal;
 @Setter
 public class Diamond extends Gem {
     private DiamondColor color;
-    public Diamond(DiamondColor color, BigDecimal clarity, BigDecimal weight){
-        super(clarity,weight);
+
+    public Diamond(DiamondColor color, BigDecimal clarity, BigDecimal weight) {
+        super(clarity, weight);
         this.color = color;
     }
 
     @Override
     public String toString() {
         return "Diamond{" +
-                "weight="+ super.getWeight() +" "+
-                " clarity=" + super.getClarity() +" "+
-                " price=" + super.getPrice() +" "+
+                "weight=" + super.getWeight() + " " +
+                " clarity=" + super.getClarity() + " " +
+                " price=" + super.getPrice() + " " +
                 " color=" + color +
                 '}';
     }

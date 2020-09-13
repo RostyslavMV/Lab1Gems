@@ -17,10 +17,25 @@ public class Necklace {
 
     public void print() {
         System.out.println("Necklace price = " + price);
-        System.out.println("Neclace weight = " + weight);
+        System.out.println("Necklace weight = " + weight);
         System.out.println("Necklace contains these gems:");
         for (Gem gem : gems) {
             System.out.println(gem);
+        }
+    }
+
+    public void printWithClarity(BigDecimal minClarity, BigDecimal maxClarity) {
+        if (minClarity.compareTo(BigDecimal.ZERO) < 0) {
+            throw new UnsupportedOperationException("minClarity less than zero");
+        }
+        if (maxClarity.compareTo(new BigDecimal("100")) > 0) {
+            throw new UnsupportedOperationException("maxClarity is more than zero");
+        }
+        System.out.println("Gems with clarity between " + minClarity + " and " + maxClarity);
+        for (Gem gem : gems) {
+            if (gem.getClarity().compareTo(minClarity) > 0 && gem.getClarity().compareTo(maxClarity) < 0) {
+                System.out.println(gem);
+            }
         }
     }
 }

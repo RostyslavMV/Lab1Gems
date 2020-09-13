@@ -8,7 +8,9 @@ import rmv.oop.lab1.main.model.Necklace;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 @Service
@@ -24,7 +26,11 @@ public class NecklaceCreationService {
         }
         BigDecimal price = getNecklacePrice(gems);
         BigDecimal weight = getNecklaceWeight(gems);
-        return new Necklace(gems,price,weight);
+
+        gems = gems.stream().sorted(Comparator.
+                comparing(Gem::getPrice)).collect(Collectors.toList());
+
+        return new Necklace(gems, price, weight);
     }
 
     public BigDecimal getNecklacePrice(List<Gem> gems) {
