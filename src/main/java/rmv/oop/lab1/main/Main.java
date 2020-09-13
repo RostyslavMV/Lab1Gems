@@ -1,4 +1,4 @@
-package rmv.oop;
+package rmv.oop.lab1.main;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
