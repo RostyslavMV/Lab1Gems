@@ -13,4 +13,14 @@ public class Pearl extends Gem {
         super(clarity,weight);
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Pearl{" +
+                "weight="+ super.getWeight() +" "+
+                " clarity=" + super.getClarity() +" "+
+                " price=" + super.getPrice() +" "+
+                " color=" + color +
+                '}';
+    }
 }

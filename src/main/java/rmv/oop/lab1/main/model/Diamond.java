@@ -13,4 +13,14 @@ public class Diamond extends Gem {
         super(clarity,weight);
         this.color = color;
     }
+
+    @Override
+    public String toString() {
+        return "Diamond{" +
+                "weight="+ super.getWeight() +" "+
+                " clarity=" + super.getClarity() +" "+
+                " price=" + super.getPrice() +" "+
+                " color=" + color +
+                '}';
+    }
 }
