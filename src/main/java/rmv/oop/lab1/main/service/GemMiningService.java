@@ -18,7 +18,7 @@ public class GemMiningService {
     private final Random random = new Random();
 
     public Gem mineGem() {
-        int gemType = random.nextInt(2);
+        int gemType = random.nextInt(3);
         BigDecimal clarity = getClarity();
         BigDecimal weight = getWeight();
         switch (gemType) {
@@ -30,20 +30,18 @@ public class GemMiningService {
                 PearlColor pearlColor = PearlColor.values()
                         [random.nextInt(PearlColor.values().length)];
                 return new Pearl(pearlColor, clarity, weight);
-            case 2:
+            default:
                 SapphireColor sapphireColor = SapphireColor.values()
                         [random.nextInt(SapphireColor.values().length)];
-                return new Sapphire(sapphireColor,clarity,weight);
-            default:
-                throw new UnsupportedOperationException("Gem type number is bigger than number of gem types");
+                return new Sapphire(sapphireColor, clarity, weight);
         }
     }
 
     private BigDecimal getWeight() {
-        return  BigDecimal.valueOf(Math.random()).multiply(maxWeight).setScale(2, RoundingMode.HALF_UP);
+        return BigDecimal.valueOf(Math.random()).multiply(maxWeight).setScale(2, RoundingMode.HALF_UP);
     }
 
     private BigDecimal getClarity() {
-        return  BigDecimal.valueOf(Math.random()).multiply(maxClarity).setScale(2, RoundingMode.HALF_UP);
+        return BigDecimal.valueOf(Math.random()).multiply(maxClarity).setScale(2, RoundingMode.HALF_UP);
     }
 }

@@ -12,11 +12,16 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@AllArgsConstructor(onConstructor = @__(@Autowired))
 @Service
 public class NecklaceCreationService {
     private final GemMiningService gemMiningService;
     private final GemEvaluationService gemEvaluationService;
+
+    @Autowired
+    public NecklaceCreationService(GemMiningService gemMiningService, GemEvaluationService gemEvaluationService) {
+        this.gemMiningService = gemMiningService;
+        this.gemEvaluationService = gemEvaluationService;
+    }
 
     public Necklace createNecklace(Integer gemCount) {
         List<Gem> gems = new ArrayList<>();
@@ -35,7 +40,7 @@ public class NecklaceCreationService {
 
     public BigDecimal getNecklacePrice(List<Gem> gems) {
         return gems.stream()
-                .map(gemEvaluationService::evaluatePrice)
+                .map(gem -> gemEvaluationService.evaluatePrice(gem))
                 .reduce(BigDecimal::add)
                 .orElse(BigDecimal.ZERO);
     }

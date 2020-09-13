@@ -12,7 +12,7 @@ import rmv.oop.lab1.main.service.NecklaceCreationService;
 import java.math.BigDecimal;
 
 @SpringBootApplication
-@PropertySource("classpath:gems.properties")
+@PropertySource("classpath:gems.yml")
 public class Main implements CommandLineRunner {
     @Value("${necklaceGemsCount}")
     private Integer necklaceGemsCount;
