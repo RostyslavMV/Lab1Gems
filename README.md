@@ -18,3 +18,5 @@ Mockito.
 стоимость. Провести сортировку камней ожерелья на основе ценности.
 Найти камни в ожерелье, соответствующие заданному диапазону
 параметров прозрачности.
+
+![Jacoco](https://github.com/RostyslavMV/Lab1Gems/blob/master/lab1gemsCoverage.PNG)
