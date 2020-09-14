@@ -2,9 +2,11 @@ package rmv.oop.lab1.main.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
+@ToString
 @Getter
 @Setter
 public class Gem {

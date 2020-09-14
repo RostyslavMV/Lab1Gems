@@ -2,9 +2,11 @@ package rmv.oop.lab1.main.model;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.math.BigDecimal;
 
+@ToString(callSuper = true)
 @Getter
 @Setter
 public class Diamond extends Gem {
@@ -13,15 +15,5 @@ public class Diamond extends Gem {
     public Diamond(DiamondColor color, BigDecimal clarity, BigDecimal weight) {
         super(clarity, weight);
         this.color = color;
-    }
-
-    @Override
-    public String toString() {
-        return "Diamond{" +
-                "weight=" + super.getWeight() + " " +
-                " clarity=" + super.getClarity() + " " +
-                " price=" + super.getPrice() + " " +
-                " color=" + color +
-                '}';
     }
 }
