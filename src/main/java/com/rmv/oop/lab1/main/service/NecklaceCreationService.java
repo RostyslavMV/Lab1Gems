@@ -1,10 +1,10 @@
-package rmv.oop.lab1.main.service;
+package com.rmv.oop.lab1.main.service;
 
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import rmv.oop.lab1.main.model.Gem;
-import rmv.oop.lab1.main.model.Necklace;
+import com.rmv.oop.lab1.main.model.Gem;
+import com.rmv.oop.lab1.main.model.Necklace;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

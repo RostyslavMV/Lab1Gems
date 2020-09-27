@@ -1,4 +1,4 @@
-package rmv.oop.lab1.main.model;
+package com.rmv.oop.lab1.main.model;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -9,10 +9,10 @@ import java.math.BigDecimal;
 @ToString(callSuper = true)
 @Getter
 @Setter
-public class Diamond extends Gem {
-    private DiamondColor color;
+public class Pearl extends Gem {
+    private PearlColor color;
 
-    public Diamond(DiamondColor color, BigDecimal clarity, BigDecimal weight) {
+    public Pearl(PearlColor color, BigDecimal clarity, BigDecimal weight) {
         super(clarity, weight);
         this.color = color;
     }

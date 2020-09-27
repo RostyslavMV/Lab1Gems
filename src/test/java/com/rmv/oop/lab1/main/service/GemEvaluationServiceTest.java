@@ -1,13 +1,12 @@
-package rmv.oop.lab1.main.service;
+package com.rmv.oop.lab1.main.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.util.ReflectionTestUtils;
-import rmv.oop.lab1.main.model.*;
+import com.rmv.oop.lab1.main.model.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

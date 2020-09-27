@@ -1,4 +1,4 @@
-package rmv.oop.lab1.main.model;
+package com.rmv.oop.lab1.main.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

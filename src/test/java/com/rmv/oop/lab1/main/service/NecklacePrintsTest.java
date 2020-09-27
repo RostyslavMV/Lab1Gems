@@ -1,10 +1,10 @@
-package rmv.oop.lab1.main.service;
+package com.rmv.oop.lab1.main.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import rmv.oop.lab1.main.model.*;
+import com.rmv.oop.lab1.main.model.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

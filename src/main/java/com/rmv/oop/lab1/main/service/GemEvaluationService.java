@@ -1,10 +1,10 @@
-package rmv.oop.lab1.main.service;
+package com.rmv.oop.lab1.main.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import rmv.oop.lab1.main.model.Diamond;
-import rmv.oop.lab1.main.model.Gem;
-import rmv.oop.lab1.main.model.Sapphire;
+import com.rmv.oop.lab1.main.model.Diamond;
+import com.rmv.oop.lab1.main.model.Gem;
+import com.rmv.oop.lab1.main.model.Sapphire;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

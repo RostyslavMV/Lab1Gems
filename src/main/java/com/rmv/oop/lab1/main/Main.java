@@ -1,4 +1,4 @@
-package rmv.oop.lab1.main;
+package com.rmv.oop.lab1.main;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -6,8 +6,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.PropertySource;
-import rmv.oop.lab1.main.model.Necklace;
-import rmv.oop.lab1.main.service.NecklaceCreationService;
+import com.rmv.oop.lab1.main.model.Necklace;
+import com.rmv.oop.lab1.main.service.NecklaceCreationService;
 
 import java.math.BigDecimal;
 

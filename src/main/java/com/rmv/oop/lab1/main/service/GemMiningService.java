@@ -1,8 +1,8 @@
-package rmv.oop.lab1.main.service;
+package com.rmv.oop.lab1.main.service;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import rmv.oop.lab1.main.model.*;
+import com.rmv.oop.lab1.main.model.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
